@@ -4,11 +4,11 @@ SELECT * FROM products;
 
 -- find all products that cost $1400
 SELECT * FROM products 
-WHERE price>=1400;
+WHERE price=1400;
 
 -- find all products that cost $11.99 or $13.99
 SELECT * FROM products
-WHERE price BETWEEN 11.99 AND 13.99;
+WHERE price=11.99 OR price=13.99;
 
 -- find all products that do NOT cost 11.99 - using NOT
 SELECT Name, Price FROM products
